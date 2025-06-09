@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fotografía</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Añade esta línea para el favicon -->
+  <link rel="icon" href="images/Icono del sitio web06.svg" type="image/x-icon" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Scroll Progress Bar -->
+<div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-emerald-300 z-[9999] transition-all duration-200 ease-out" style="width: 0%;"></div>
+  <!-- Header -->
+  <header class="w-full px-6 py-4 flex justify-between items-center bg-white shadow-md fixed top-0 left-0 z-50">
+  <a href="/" class="flex items-center">
+    <img src="Logo-ms.svg" alt="Logo de Michael Escobar" class="h-10">
+  </a>
+  <nav class="hidden md:flex gap-6 text-sm font-medium">
+    <a href="#contacto" class="hover:text-blue-600">Contacto</a>
+  </nav>
+  <div class="md:hidden">
+    <button id="menu-btn" class="text-gray-900 focus:outline-none">
+      <i class="fas fa-bars fa-lg"></i> </button>
+  </div>
+</header>
+
+<div id="mobile-menu" class="hidden md:hidden fixed top-[72px] left-0 w-full bg-white shadow-md z-40 flex flex-col items-center py-4">
+    <a href="#contacto" class="block py-2 px-4 text-sm hover:bg-gray-100 w-full text-center">Contacto</a>
+    </div>
+
+  <!-- Banner -->
+<section class="w-full h-auto sm:min-h-[300px] md:min-h-[400px] lg:min-h-[450px] relative mt-[80px]">
+    <div class="w-full max-h-[500px] overflow-hidden">
+      <img src="images/portada fotografia.jpg"
+           alt="Banner del proyecto"
+           class="w-full h-auto object-cover" />
+    </div>
+  </section>
+
+  <!-- Título debajo del banner -->
+      <section class="text-center" style="margin-top: 20px;">
+        <h1 data-aos="fade-up" class="text-4xl md:text-5xl font-extrabold text-gray-800">
+        Natural y cercano
+        </h1>
+      </section>
+
+
+  <!-- Subtítulo y contenido -->
+  <section class="max-w-3xl mx-auto px-6 py-16">
+    <p data-aos="fade-up" class="text-lg text-gray-600 mb-6 text-justify">
+      Así veo el mundo a través de mi lente. Te invito a descubrir lo que mis ojos encontraron.
+    </p>
+
+    
+  </section>
+
+  <!-- Bloque de una imágenes 
+  <section class="py-16 px-6 bg-white">
+    <div class="flex justify-center">
+      <div class="w-full max-w-4xl">
+        <img src="images/Imagenes Banca en linea/7.jpg" alt="Imagen descriptiva" class="w-full h-auto object-cover rounded-lg shadow-lg" />
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Bloque de dos imágenes 
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <img src="images/Imagenes Banca en linea/5.jpg" alt="Imagen 1" class="w-full h-auto object-cover rounded-lg shadow-lg" />
+      </div>
+      <div>
+        <img src="images/Imagenes Banca en linea/3.jpg" alt="Imagen 2" class="w-full h-auto object-cover rounded-lg shadow-lg" />
+      </div>
+      <div>
+        <img src="images/Imagenes Banca en linea/4.jpg" alt="Imagen 1" class="w-full h-auto object-cover rounded-lg shadow-lg" />
+      </div>
+      <div>
+        <img src="images/Imagenes Banca en linea/2.jpg" alt="Imagen 2" class="w-full h-auto object-cover rounded-lg shadow-lg" />
+      </div>
+    </div>
+  </section> -->
+
+  
+
+
+
+  <section class="bg-white px-6 py-16">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" data-aos="zoom-in" data-aos-delay="200">
+    
+    <!-- Lista de imágenes -->
+    <img src="images/Photoshoots/WEB1.JPG" alt="Foto 1" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB2.JPG" alt="Foto 2" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB3.JPG" alt="Foto 3" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB4.JPG" alt="Foto 4" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB5.JPG" alt="Foto 5" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB6.JPG" alt="Foto 6" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB7.JPG" alt="Foto 7" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB8.JPG" alt="Foto 8" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB9.JPG" alt="Foto 9" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB10.JPG" alt="Foto 10" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB11.JPG" alt="Foto 11" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB12.JPG" alt="Foto 12" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB13.JPG" alt="Foto 13" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB14.JPG" alt="Foto 14" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB15.JPG" alt="Foto 15" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB16.JPG" alt="Foto 16" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB17.JPG" alt="Foto 17" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB18.JPG" alt="Foto 18" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB19.JPG" alt="Foto 19" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB20.JPG" alt="Foto 20" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB21.JPG" alt="Foto 21" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB22.JPG" alt="Foto 22" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB23.JPG" alt="Foto 23" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB24.JPG" alt="Foto 24" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB25.JPG" alt="Foto 25" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB26.JPG" alt="Foto 26" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB27.JPG" alt="Foto 27" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB28.JPG" alt="Foto 28" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    <img src="images/Photoshoots/WEB29.JPG" alt="Foto 29" class="w-full h-auto object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+    
+
+    <!-- Añade más imágenes aquí sin duplicar bloques -->
+    
+  </div>
+</section>
+
+        
+  
+
+       <!-- Llamado a la acción -->
+<div class="w-full max-w-4xl mx-auto text-center mb-2">
+  <h2  data-aos="fade-up" class="text-2xl md:text-3xl font-bold text-gray-800">
+    Si esto te llamó la atención,<br class="hidden md:block" />
+    imagina lo que podemos armar juntos.<br />
+    <span data-aos="fade-up" class="text-blue-600">Escríbeme y cuadramos algo cool.</span>
+  </h2>
+</div>
+
+    </div>
+  </section>
+  
+  <!-- Bloque de tres imágenes 
+  <section class="max-w-3xl mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="overflow-hidden rounded-lg shadow-lg">
+       <img src="images/muebles a mi medida/IMG_7298.webp" alt="Imagen 1 Proyecto" class="w-full h-full object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <img src="images/muebles a mi medida/IMG_7298.webp" alt="Imagen 1 Proyecto" class="w-full h-full object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+      </div>
+      <div class="overflow-hidden rounded-lg shadow-lg">
+        <img src="images/muebles a mi medida/IMG_7298.webp" alt="Imagen 1 Proyecto" class="w-full h-full object-cover rounded-lg cursor-zoom-in" onclick="openFullscreen(this.src)" />
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-3xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-semibold text-left mb-6">1. Contexto del proyecto</h2>
+      <p class="text-lg text-gray-600 mb-6">
+      Banesco necesitaba modernizar su plataforma de banca en línea, que presentaba múltiples fricciones para el usuario y un diseño visual desactualizado. El reto: reconstruir toda la experiencia desde cero, tanto para clientes individuales como para empresas, incorporando nuevas funcionalidades y mejorando las existentes.    </p>
+  </section> -->
+  
+  
+
+
+
+
+<!-- Formulario de contacto -->
+<section id="contacto" class="py-20 bg-white">
+    <h3 data-aos="fade-up" class="text-2xl sm:text-3xl font-bold mb-8 text-center">Esperando tu mensaje</h3>
+  
+  <!-- Formulario -->
+  <form action="https://formspree.io/f/xyzwjlgz" method="POST" class="max-w-xl mx-auto space-y-4">
+    <input 
+      type="text" 
+      name="name" 
+      placeholder="Tu nombre" 
+      required 
+      class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+    />
+    <input 
+      type="email" 
+      name="email" 
+      placeholder="Tu correo electrónico" 
+      required 
+      class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+    />
+    <textarea 
+      name="message" 
+      placeholder="Tu mensaje" 
+      rows="5" 
+      required 
+      class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+    ></textarea>
+    <button 
+      type="submit" 
+      class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+    >
+      Enviar
+    </button>
+  </form>
+</section>
+
+        <!-- Sección de sugerencias automáticas -->
+      <section class="bg-gray-100 py-16">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2 data-aos="fade-up" class="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">También te puede interesar</h2>
+          <div id="sugerencias" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Aquí se insertarán automáticamente -->
+          </div>
+        </div>
+      </section>
+  
+  <!-- Footer -->
+  <footer  class="py-6 text-center bg-gray-900 text-sm text-gray-500 bg-gray-100">
+    <div class="flex justify-center items-center space-x-4">
+      
+      <!-- Texto -->
+      <span>© 2025 Michael Steven, sitio personal.
+        <a href="https://www.linkedin.com/in/michael-s-escobar-aa37b4262" target="_blank" class="text-gray-500 hover:text-blue-600 text-xl">
+          <i class="fab fa-linkedin"></i>
+        </a> Todos los derechos reservados.</span>
+      <!-- Ícono de LinkedIn -->
+      
+    </div>
+  </footer>
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-in-out',
+  });
+</script>
+<script>
+  const scrollProgress = document.getElementById('scroll-progress');
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    scrollProgress.style.width = scrollPercent + '%';
+  });
+</script>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const header = document.querySelector('header'); // Para calcular el offset del menú
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    // Ajusta el 'top' del menú móvil basado en la altura del header.
+    // La altura de tu header es py-4 (1rem arriba, 1rem abajo = 2rem) + altura del logo/texto.
+    // Tailwind por defecto: 1rem = 16px. Si h-10 (logo) es 2.5rem = 40px.
+    // Total approx 40px + 32px (py-4) = 72px. Ajusta este valor si es necesario.
+    // Si el header cambia de altura dinámicamente, este enfoque puede necesitar ser más robusto.
+     mobileMenu.style.top = `${header.offsetHeight}px`;
+  });
+
+  // Opcional: Cerrar menú al hacer clic en un enlace del menú móvil
+  const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+  mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+  });
+</script>
+
+<script>
+  // Lista de otras páginas que quieres sugerir
+  const sugerencias = [
+    {
+      titulo: "Sheyla Moran Psicologia general",
+      url: "smoran.html",
+      imagen: "images/proyecto3.jpg",
+      descripcion: "Psicologia moderna, simple y minimalista."
+    },
+    {
+      titulo: "Bonsai Leather Goods",
+      url: "blg.html",
+      imagen: "images/proyecto5.jpg",
+      descripcion: "Duradero, escencial, precisión, elegancia."
+    },
+    {
+      titulo: "Banesco Panamá 2",
+      url: "Banescopanama2.html",
+      imagen: "images/proyecto1.jpg",
+      descripcion: "Buenas practicas, trabajo en equipo."
+    }
+  ];
+
+  const contenedor = document.getElementById("sugerencias");
+
+  sugerencias.forEach(item => {
+    const tarjeta = document.createElement("a");
+    tarjeta.href = item.url;
+    tarjeta.className = "bg-white rounded-lg shadow hover:shadow-lg transition duration-300 p-4 block";
+
+    tarjeta.innerHTML = `
+      <img src="${item.imagen}" alt="${item.titulo}" class="w-full h-40 object-cover rounded-md mb-4">
+      <h3 class="text-lg font-semibold text-gray-800">${item.titulo}</h3>
+      <p class="text-sm text-gray-600 mt-1">${item.descripcion}</p>
+    `;
+
+    contenedor.appendChild(tarjeta);
+  });
+</script>
+
+
+<script>
+  function openFullscreen(src) {
+    const zoomImg = document.createElement("img");
+    zoomImg.src = src;
+    zoomImg.style.position = "fixed";
+    zoomImg.style.top = 0;
+    zoomImg.style.left = 0;
+    zoomImg.style.width = "100vw";
+    zoomImg.style.height = "100vh";
+    zoomImg.style.objectFit = "contain";
+    zoomImg.style.backgroundColor = "rgba(0,0,0,0.9)";
+    zoomImg.style.zIndex = 9999;
+    zoomImg.style.cursor = "zoom-out";
+    zoomImg.onclick = () => document.body.removeChild(zoomImg);
+    document.body.appendChild(zoomImg);
+  }
+</script>
+
+
+
+</body>
+</html>

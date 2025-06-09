@@ -1,0 +1,15 @@
+/* Botón principal */
+.btn-principal {
+    @apply bg-blue-600 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-blue-700 transition;
+  }
+  
+  @keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite;
+}
+
+

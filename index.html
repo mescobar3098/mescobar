@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Michael Steven Portafolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Añade esta línea para el favicon -->
+  <link rel="icon" href="images/Icono del sitio web06.svg" type="image/x-icon" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 min-h-screen flex flex-col">
+   <!-- Scroll Progress Bar -->
+<div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-emerald-300 z-[9999] transition-all duration-200 ease-out" style="width: 0%;"></div>
+
+
+  <!-- Header -->
+  <header class="w-full px-6 py-4 flex justify-between items-center bg-white shadow-md fixed top-0 left-0 z-50">
+  <a href="/" class="flex items-center">
+    <img src="Logo-ms.svg" alt="Logo de Michael Escobar" class="h-10">
+  </a>
+  <nav class="hidden md:flex gap-6 text-sm font-medium">
+    <a href="#contacto" class="hover:text-blue-600">Contacto</a>
+  </nav>
+  <div class="md:hidden">
+    <button id="menu-btn" class="text-gray-900 focus:outline-none">
+      <i class="fas fa-bars fa-lg"></i> </button>
+  </div>
+</header>
+
+<div id="mobile-menu" class="hidden md:hidden fixed top-[72px] left-0 w-full bg-white shadow-md z-40 flex flex-col items-center py-4">
+    <a href="#contacto" class="block py-2 px-4 text-sm hover:bg-gray-100 w-full text-center">Contacto</a>
+    </div>
+
+  <main class="flex-grow">
+    <section class="w-full h-[80vh] max-h-[612px] sm:h-auto sm:min-h-[500px] md:min-h-[550px] lg:h-[612px] relative mt-[80px]">    <!-- Imagen de fondo -->
+        <div class="absolute top-0 left-0 w-full h-full z-0">
+        <img src="images/banner-image.jpg" alt="Banner Image" class="object-cover w-full h-full" />
+        </div>
+  
+    <!-- Contenido sobre la imagen -->
+      <!-- Contenido sobre la imagen -->
+    <div class="relative z-20 flex flex-col justify-center items-center text-center md:items-start md:text-left md:pl-16 lg:pl-24 xl:pl-[200px] 2xl:pl-[390px] h-full px-6 py-8 md:py-0">
+      <h2 data-aos="fade-up" class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-800 mb-4">Soy Michael</h2>
+  <p data-aos="fade-up" data-aos-delay="200" class="text-2xl md:text-3xl text-gray-700 mb-6">Diseñador UX/UI</p>
+  <a 
+    data-aos="fade-up" 
+    data-aos-delay="400" 
+    href="https://www.linkedin.com/in/michael-s-escobar-aa37b4262" 
+    target="_blank"
+    class="bg-blue-600 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-md"
+  >
+    Resumen en LinkedIn
+  </a>
+</div>
+  </section>
+
+  <section class="w-full py-16 bg-gray-100 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-12 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-[100px]">
+    <!-- Imagen más cerca del texto -->
+    <div class="aspect-[3/4] w-full max-w-[280px] sm:max-w-[300px] md:w-auto md:max-w-[320px] lg:max-w-[320px] overflow-hidden mx-auto md:mx-0">
+      <img 
+        src="images/michael.png" 
+        alt="Michael Escobar" 
+        class="w-full h-full object-cover rounded-lg shadow-[0_20px_20px_-10px_rgba(0,0,0,0.2)]"
+      />
+    </div>
+  
+    <!-- Texto con mejor alineación y control de ancho -->
+    <div class="max-w-xl text-left mt-8 md:mt-0">
+      <h3 class="text-3xl font-bold text-gray-800 mb-4">Conoce más sobre mí</h3>
+      <p class="text-lg text-gray-600 mb-6 text-justify">
+        Diseñador gráfico con 4 años de experiencia y 3 años trabajando en proyectos de UX/UI en el sector bancario. Combino creatividad y enfoque funcional para mejorar la experiencia del usuario en productos digitales, cuidando tanto la estética como la usabilidad.
+      </p>
+      <a href="#contacto" class="bg-blue-600 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-blue-700 transition">
+        Contáctame
+      </a>
+    </div>
+  </section>
+  
+  <!-- Carrusel de Apps -->
+<section class="w-full bg-white py-10">
+  <div class="overflow-hidden relative">
+    <div class="flex animate-scroll whitespace-nowrap gap-10 px-6">
+      <!-- Repite los logos aquí -->
+      <img src="images/Iconos/Recurso 19.svg" alt="adobe" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 20.svg" alt="adobe" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 24.svg" alt="Notion" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 26.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 7.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 8.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 12.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 23.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 22.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 21.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 18.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 17.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 16.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 15.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 13.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 25.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 26.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 9.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 6.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 5.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 3.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Recurso 2.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Layer 2 (3).svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Layer 2 (2).svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+      <img src="images/Iconos/Layer 2.svg" alt="Webflow" class="w-8 h-8 sm:h-14 object-contain grayscale hover:grayscale-0 transition" />
+
+      <!-- Repite para continuidad 
+      <img src="images/Iconos/Recurso 20.svg" alt="Webflow" class="h-12 sm:h-14 object-contain grayscale hover:grayscale-0 transition" /> -->
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="py-20 px-6 bg-white">
+  <h3 class="text-3xl font-bold mb-12 text-center">Proyectos multidisciplinarios ✅</h3>
+  <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+    <!-- Proyecto 1 -->
+    <a href="Banescopanama.html" class="block group" data-aos="fade-up" data-aos-delay="0">
+      <div class="relative border rounded-xl overflow-hidden shadow-sm transition duration-300 hover:scale-105 hover:shadow-blue-300/40">
+        <div class="h-48 overflow-hidden relative">
+          <img src="images/proyecto6.jpg" alt="Proyecto 1" class="w-full h-full object-cover transition duration-300 transform group-hover:scale-110" />
+          <!-- Overlay -->
+          <div class="absolute inset-0 bg-white/10 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <i class="fas fa-search text-white text-2xl"></i>
+          </div>
+          <span class="absolute bottom-2 left-2 bg-gray-800/60 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">UX/UI</span>
+        </div>
+      </div>
+      <div class="mt-2 pl-1">
+        <h4 class="text-xl font-semibold mb-2">Banesco Panamá</h4>
+      </div>
+    </a>
+
+    <!-- Proyecto 2 -->
+    <a href="coloniamielera.html" class="block group" data-aos="fade-up" data-aos-delay="100">
+      <div class="relative border rounded-xl overflow-hidden shadow-sm transition duration-300 hover:scale-105 hover:shadow-blue-300/40">
+        <div class="h-48 overflow-hidden relative">
+          <img src="images/proyecto2.jpg" alt="Proyecto 2" class="w-full h-full object-cover transition duration-300 transform group-hover:scale-110" />
+          <div class="absolute inset-0 bg-white/10 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <i class="fas fa-search text-white text-2xl"></i>
+          </div>
+          <span class="absolute bottom-2 left-2 bg-gray-800/60 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">Brand</span>
+        </div>
+      </div>
+      <div class="mt-2 pl-1">
+        <h4 class="text-xl font-semibold mb-2">Colonia Mielera</h4>
+      </div>
+    </a>
+
+    <!-- Proyecto 3 -->
+    <a href="smoran.html" class="block group" data-aos="fade-up" data-aos-delay="200">
+      <div class="relative border rounded-xl overflow-hidden shadow-sm transition duration-300 hover:scale-105 hover:shadow-blue-300/40">
+        <div class="h-48 overflow-hidden relative">
+          <img src="images/proyecto3.jpg" alt="Proyecto 3" class="w-full h-full object-cover transition duration-300 transform group-hover:scale-110" />
+          <div class="absolute inset-0 bg-white/10 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <i class="fas fa-search text-white text-2xl"></i>
+          </div>
+          <span class="absolute bottom-2 left-2 bg-gray-800/60 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">Brand</span>
+        </div>
+      </div>
+      <div class="mt-2 pl-1">
+        <h4 class="text-xl font-semibold mb-2">Sheyla Morán psicología general</h4>
+      </div>
+    </a>
+
+    <!-- Proyecto 4 -->
+    <a href="petplus.html" class="block group" data-aos="fade-up" data-aos-delay="300">
+      <div class="relative border rounded-xl overflow-hidden shadow-sm transition duration-300 hover:scale-105 hover:shadow-blue-300/40">
+        <div class="h-48 overflow-hidden relative">
+          <img src="images/proyecto4.jpg" alt="Proyecto 4" class="w-full h-full object-cover transition duration-300 transform group-hover:scale-110" />
+          <div class="absolute inset-0 bg-white/10 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <i class="fas fa-search text-white text-2xl"></i>
+          </div>
+          <span class="absolute bottom-2 left-2 bg-gray-800/60 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">Brand</span>
+        </div>
+      </div>
+      <div class="mt-2 pl-1">
+        <h4 class="text-xl font-semibold mb-2">Pet Plus</h4>
+      </div>
+    </a>
+
+    <!-- Proyecto 5 -->
+    <a href="blg.html" class="block group" data-aos="fade-up" data-aos-delay="400">
+      <div class="relative border rounded-xl overflow-hidden shadow-sm transition duration-300 hover:scale-105 hover:shadow-blue-300/40">
+        <div class="h-48 overflow-hidden relative">
+          <img src="images/proyecto5.jpg" alt="Proyecto 5" class="w-full h-full object-cover transition duration-300 transform group-hover:scale-110" />
+          <div class="absolute inset-0 bg-white/10 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <i class="fas fa-search text-white text-2xl"></i>
+          </div>
+          <span class="absolute bottom-2 left-2 bg-gray-800/60 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">Brand</span>
+        </div>
+      </div>
+      <div class="mt-2 pl-1">
+        <h4 class="text-xl font-semibold mb-2">Bonsai Leather Goods</h4>
+      </div>
+    </a>
+
+    <!-- Proyecto 6 -->
+    <a href="Banescopanama2.html" class="block group" data-aos="fade-up" data-aos-delay="500">
+      <div class="relative border rounded-xl overflow-hidden shadow-sm transition duration-300 hover:scale-105 hover:shadow-blue-300/40">
+        <div class="h-48 overflow-hidden relative">
+          <img src="images/proyecto1.jpg" alt="Proyecto 6" class="w-full h-full object-cover transition duration-300 transform group-hover:scale-110" />
+          <div class="absolute inset-0 bg-white/10 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <i class="fas fa-search text-white text-2xl"></i>
+          </div>
+          <span class="absolute bottom-2 left-2 bg-gray-800/60 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">UX/UI - Webmaster</span>
+        </div>
+      </div>
+      <div class="mt-2 pl-1">
+        <h4 class="text-xl font-semibold mb-2">Banesco Panamá 2</h4>
+      </div>
+    </a>
+
+
+    <!-- Proyecto 6.5 -->
+    <a href="feax.html" class="block group" data-aos="fade-up" data-aos-delay="500">
+      <div class="relative border rounded-xl overflow-hidden shadow-sm transition duration-300 hover:scale-105 hover:shadow-blue-300/40">
+        <div class="h-48 overflow-hidden relative">
+          <img src="images/proyecto6.5.jpg" alt="Proyecto 6" class="w-full h-full object-cover transition duration-300 transform group-hover:scale-110" />
+          <div class="absolute inset-0 bg-white/10 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <i class="fas fa-search text-white text-2xl"></i>
+          </div>
+          <span class="absolute bottom-2 left-2 bg-gray-800/60 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">UX/UI - Webmaster</span>
+        </div>
+      </div>
+      <div class="mt-2 pl-1">
+        <h4 class="text-xl font-semibold mb-2">Feax International</h4>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+
+  <!-- Trabajo manual 2 -->
+ <section id="proyectos" class="py-20 px-6 bg-white">
+  <h3 class="text-3xl font-bold mb-12 text-center">Proyectos manuales</h3>
+  <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+    <!-- Proyecto 1 -->
+    <a href="deskidea.html" class="block group" data-aos="fade-up" data-aos-delay="500">
+      <div class="relative border rounded-xl overflow-hidden shadow-sm transition duration-300 hover:scale-105 hover:shadow-blue-300/40">
+        <div class="h-48 overflow-hidden relative">
+          <img src="images/proyecto7.webp" alt="Proyecto 6" class="w-full h-full object-cover transition duration-300 transform group-hover:scale-110" />
+          <div class="absolute inset-0 bg-white/10 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <i class="fas fa-search text-white text-2xl"></i>
+          </div>
+          <span class="absolute bottom-2 left-2 bg-gray-800/60 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">DESK</span>
+        </div>
+      </div>
+      <div class="mt-2 pl-1">
+        <h4 class="text-xl font-semibold mb-2">Setup - Mesas</h4>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+
+  <!-- Trabajo Fotografíco -->
+ <section id="proyectos" class="py-20 px-6 bg-white">
+  <h3 class="text-3xl font-bold mb-12 text-center">Photoshoots</h3>
+  <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+    <!-- Proyecto 1 -->
+    <a href="foto1.html" class="block group" data-aos="fade-up" data-aos-delay="500">
+      <div class="relative border rounded-xl overflow-hidden shadow-sm transition duration-300 hover:scale-105 hover:shadow-blue-300/40">
+        <div class="h-48 overflow-hidden relative">
+          <img src="images/Proyecto8.jpg" alt="Proyecto 6" class="w-full h-full object-cover transition duration-300 transform group-hover:scale-110" />
+          <div class="absolute inset-0 bg-white/10 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+            <i class="fas fa-search text-white text-2xl"></i>
+          </div>
+          <span class="absolute bottom-2 left-2 bg-gray-800/60 text-white text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm">Shoots</span>
+        </div>
+      </div>
+      <div class="mt-2 pl-1">
+        <h4 class="text-xl font-semibold mb-2">Fotografía</h4>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+  </section> <section id="cta" class="py-20 px-6 bg-white">
+      <div class="w-full max-w-4xl mx-auto text-center"> <h2 data-aos="fade-up" class="text-2xl md:text-3xl font-bold text-gray-800">
+          Si esto te llamó la atención,<br class="hidden md:block" />
+          imagina lo que podemos armar juntos.<br />
+          <span class="text-blue-600">Escríbeme y cuadramos algo cool.</span>
+        </h2>
+      </div>
+      </section>
+
+
+
+  <!-- Sobre mí 
+  <section id="sobre-mi" class="py-20 px-6 bg-gray-50">
+    <h3 class="text-3xl font-bold mb-8 text-center">Sobre mí</h3>
+    <div class="max-w-3xl mx-auto text-center text-gray-600 space-y-4">
+      <p>
+        Soy un diseñador UX/UI con experiencia creando soluciones digitales intuitivas y visualmente atractivas. 
+        Me apasiona entender las necesidades de los usuarios y transformar ideas en productos funcionales.
+      </p>
+      <p>
+        He trabajado en proyectos de diseño para apps móviles, páginas web, y sistemas complejos, siempre con un enfoque centrado en el usuario. 
+        Mi objetivo es siempre crear experiencias que no solo funcionen bien, sino que también se sientan bien.
+      </p>
+    </div>
+  </section> -->
+
+        <!-- Contacto -->
+        <section id="contacto" class="py-20 bg-white px-6">
+              <h3 data-aos="fade-up" class="text-2xl sm:text-3xl font-bold mb-8 text-center">Esperando tu mensaje</h3>
+          
+          <!-- Formulario -->
+          <form action="https://formspree.io/f/xyzwjlgz" method="POST" class="max-w-xl mx-auto space-y-4">
+            <input 
+              type="text" 
+              name="name" 
+              placeholder="Tu nombre" 
+              required 
+              class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <input 
+              type="email" 
+              name="email" 
+              placeholder="Tu correo electrónico" 
+              required 
+              class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <textarea 
+              name="message" 
+              placeholder="Tu mensaje" 
+              rows="5" 
+              required 
+              class="w-full border px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            ></textarea>
+            <button 
+              type="submit" 
+              class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+            >
+              Enviar
+            </button>
+          </form>
+        </section> 
+
+
+  <!-- Footer -->
+  <footer  class="py-6 text-center  text-sm text-gray-500 bg-gray-100">
+    <div class="flex justify-center items-center space-x-4">
+      
+      <!-- Texto -->
+      <span>© 2025 Michael Steven, sitio personal.
+        <a href="https://www.linkedin.com/in/michael-s-escobar-aa37b4262" target="_blank" class="text-gray-500 hover:text-blue-600 text-xl">
+          <i class="fab fa-linkedin"></i>
+        </a> Todos los derechos reservados.</span>
+      <!-- Ícono de LinkedIn -->
+      
+    </div>
+  </footer>
+  
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // duración de la animación en ms
+    once: true,     // animar solo una vez
+    easing: 'ease-in-out',
+  });
+</script>
+
+<script>
+  const scrollProgress = document.getElementById('scroll-progress');
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    scrollProgress.style.width = scrollPercent + '%';
+  });
+</script>
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const header = document.querySelector('header'); // Para calcular el offset del menú
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    // Ajusta el 'top' del menú móvil basado en la altura del header.
+    // La altura de tu header es py-4 (1rem arriba, 1rem abajo = 2rem) + altura del logo/texto.
+    // Tailwind por defecto: 1rem = 16px. Si h-10 (logo) es 2.5rem = 40px.
+    // Total approx 40px + 32px (py-4) = 72px. Ajusta este valor si es necesario.
+    // Si el header cambia de altura dinámicamente, este enfoque puede necesitar ser más robusto.
+     mobileMenu.style.top = `${header.offsetHeight}px`;
+  });
+
+  // Opcional: Cerrar menú al hacer clic en un enlace del menú móvil
+  const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+  mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+    });
+  });
+</script>
+
+<script>
+  // Scroll progress bar
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    const progressBar = document.getElementById('scroll-progress');
+    if (progressBar) {
+      progressBar.style.width = scrollPercent + '%';
+    }
+  });
+</script>
+
+</body>
+</html>
